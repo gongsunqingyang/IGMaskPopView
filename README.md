@@ -1,20 +1,18 @@
 # IGMaskPopView
-----------
 
-## Introduction
+### Introduction
 > **IGMaskPopView** A popover with mask, can be customized mask boundary, popup direction. Based on IGPopView, the design concept refers to MBProgressHUD. It can customize the parent view and child view.
 
-## 预览
+### Preview
 ![Mask动画](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled.gif)
 ![Pop弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled1.gif)
 ![PopMask动画弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled2.gif)
 ![Example](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled3.gif)
 
-## Preview
-
+### Usage 
 > **IGPopView**
 
-- usage
+- Basic usage
 ```objective-c
 IGPopView *popView = [IGPopView new];
 popView.contentView = self.view;
@@ -39,21 +37,19 @@ popView.contentView = self.view;
 ```
 
 ----------
-----------
 
 # IGMaskPopView
-----------
 
-## 简介
+### 简介
 > **IGMaskPopView** 一个带蒙版的弹窗，可自定义蒙版边界，弹出方向。基于IGPopView，设计思路参考了MBProgressHUD，可自定义父视图，子视图。
 
-## 预览
+### 预览
 ![Mask动画](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled.gif)
 ![Pop弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled1.gif)
 ![PopMask动画弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled2.gif)
 ![Example](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled3.gif)
 
-## 使用
+### 使用
 
 > **IGPopView**
 
