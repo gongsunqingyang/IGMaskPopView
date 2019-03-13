@@ -1,9 +1,11 @@
 ## 简介
-> **IGPopView** 一个简单的弹窗，可自定义父视图，遮罩颜色。
-**IGMaskPopView** 基于IGPopView，带遮罩的弹框，可自定义弹出方向，弹出边界
+> **IGMaskPopView** 一个带蒙版的弹窗，可自定义蒙版边界，弹出方向。基于IGPopView，设计思路参考了MBProgressHUD，可自定义父视图，子视图。
 
 ## 预览
-![Mask动画](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled.gif)![Pop弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled1.gif)![PopMask动画弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled2.gif)![Example](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled3.gif)
+![Mask动画](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled.gif)
+![Pop弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled1.gif)
+![PopMask动画弹框](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled2.gif)
+![Example](https://github.com/gongsunqingyang/IGMaskPopView/blob/master/Preview/Untitled3.gif)
 
 ## 使用
 
