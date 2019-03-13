@@ -31,12 +31,15 @@ popView.contentView = self.view;
 
 > **IGMaskPopView**
 
-- usage
+- Basic usage
 ```objective-c
 - (void)configWithDirection:(IGMaskPopViewDirection)direction animationDuration:(CGFloat)animationDuration containerRect:(CGRect)containerRect;
 ```
 
+&nbsp; 
+
 ----------
+&nbsp; 
 
 # IGMaskPopView
 
