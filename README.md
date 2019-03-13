@@ -37,8 +37,8 @@ popView.contentView = self.view;
 ```
 
 &nbsp; 
-
-----------
+&nbsp; 
+&nbsp; 
 &nbsp; 
 
 # IGMaskPopView
