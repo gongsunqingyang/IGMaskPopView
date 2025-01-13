@@ -15,17 +15,20 @@
 
 @implementation CustomMaskPopView
 
-- (void)setupUI {
-    [super setupUI];
-    
-    self.coverColor = [UIColor clearColor];
-    [self.containerView addSubview:self.imageView];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.coverColor = [UIColor clearColor];
+        [self.containerView addSubview:self.imageView];
+    }
+    return self;
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    _imageView.frame = CGRectMake(5, 5, self.containerView.bounds.size.width - 5 * 2, self.containerView.bounds.size.height - 5 * 2);
+    _imageView.frame = self.containerView.bounds;
+//    _imageView.frame = CGRectMake(5, 5, self.containerView.bounds.size.width - 5 * 2, self.containerView.bounds.size.height - 5 * 2);
 }
 
 #pragma mark - Getter

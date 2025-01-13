@@ -15,30 +15,17 @@
 
 
 @implementation IGPopView
-
-- (void)dealloc {
-//    NSLog(@"IGPopView 销毁");
-}
  
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupUI];
-        [self setupConstraints];
+        self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.4];
+        
+        self.coverBtn = [UIButton new];
+        [self.coverBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:self.coverBtn];
     }
     return self;
-}
-
-- (void)setupUI {
-    self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.4];
-    
-    self.coverBtn = [UIButton new];
-    [self.coverBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:self.coverBtn];
-}
-
-- (void)setupConstraints {
-    
 }
 
 - (void)layoutSubviews {

@@ -28,8 +28,6 @@
 @property (nonatomic, weak) id model;
 @property (nonatomic, weak) id <IGPopViewDelegate> popDelegate;
 
-- (void)setupUI;
-- (void)setupConstraints;
 - (void)show;
 - (void)dismiss;
 @end

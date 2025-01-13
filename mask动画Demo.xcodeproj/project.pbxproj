@@ -20,6 +20,10 @@
 		CCFF1BFD22365E48001729A1 /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1BFC22365E48001729A1 /* ViewControllerC.m */; };
 		CCFF1C0422366424001729A1 /* CustomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C0322366424001729A1 /* CustomPopView.m */; };
 		CCFF1C0822374352001729A1 /* ViewControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C0722374352001729A1 /* ViewControllerD.m */; };
+		CCFF1C10223A341C001729A1 /* YLPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C0F223A341B001729A1 /* YLPopupView.m */; };
+		CCFF1C15223A57EA001729A1 /* ViewControllerY.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C13223A57EA001729A1 /* ViewControllerY.m */; };
+		CCFF1C19223B49D1001729A1 /* CustomPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C18223B49D1001729A1 /* CustomPopupView.m */; };
+		CCFF1C1C223BA028001729A1 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1C1B223BA028001729A1 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,14 @@
 		CCFF1C0322366424001729A1 /* CustomPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPopView.m; sourceTree = "<group>"; };
 		CCFF1C0622374352001729A1 /* ViewControllerD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerD.h; sourceTree = "<group>"; };
 		CCFF1C0722374352001729A1 /* ViewControllerD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerD.m; sourceTree = "<group>"; };
+		CCFF1C0E223A341B001729A1 /* YLPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPopupView.h; sourceTree = "<group>"; };
+		CCFF1C0F223A341B001729A1 /* YLPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPopupView.m; sourceTree = "<group>"; };
+		CCFF1C12223A57EA001729A1 /* ViewControllerY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerY.h; sourceTree = "<group>"; };
+		CCFF1C13223A57EA001729A1 /* ViewControllerY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerY.m; sourceTree = "<group>"; };
+		CCFF1C17223B49D1001729A1 /* CustomPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPopupView.h; sourceTree = "<group>"; };
+		CCFF1C18223B49D1001729A1 /* CustomPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPopupView.m; sourceTree = "<group>"; };
+		CCFF1C1A223BA028001729A1 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		CCFF1C1B223BA028001729A1 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				CCFF1BFE22365EA0001729A1 /* IGMaskPopView */,
+				CCFF1C0D223A33B1001729A1 /* YLPopupView */,
+				CCFF1C11223A57A8001729A1 /* YLPopupExample */,
 				CCFF1BFF223663A1001729A1 /* Mask动画 */,
 				CCFF1C00223663B4001729A1 /* Pop弹框 */,
 				CCFF1C01223663BE001729A1 /* PopMask动画弹框 */,
@@ -152,6 +166,28 @@
 				CCFF1BF322326A76001729A1 /* CustomMaskPopView.m */,
 			);
 			name = Example;
+			sourceTree = "<group>";
+		};
+		CCFF1C0D223A33B1001729A1 /* YLPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				CCFF1C0E223A341B001729A1 /* YLPopupView.h */,
+				CCFF1C0F223A341B001729A1 /* YLPopupView.m */,
+			);
+			name = YLPopupView;
+			sourceTree = "<group>";
+		};
+		CCFF1C11223A57A8001729A1 /* YLPopupExample */ = {
+			isa = PBXGroup;
+			children = (
+				CCFF1C12223A57EA001729A1 /* ViewControllerY.h */,
+				CCFF1C13223A57EA001729A1 /* ViewControllerY.m */,
+				CCFF1C17223B49D1001729A1 /* CustomPopupView.h */,
+				CCFF1C18223B49D1001729A1 /* CustomPopupView.m */,
+				CCFF1C1A223BA028001729A1 /* CustomView.h */,
+				CCFF1C1B223BA028001729A1 /* CustomView.m */,
+			);
+			name = YLPopupExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +268,12 @@
 				CCFF1C0822374352001729A1 /* ViewControllerD.m in Sources */,
 				CCDC67A82231F9860013F22D /* IGPopView.m in Sources */,
 				CCA201321F480AEC00639F51 /* AppDelegate.m in Sources */,
+				CCFF1C19223B49D1001729A1 /* CustomPopupView.m in Sources */,
 				CCFF1C0422366424001729A1 /* CustomPopView.m in Sources */,
 				CCA2012F1F480AEC00639F51 /* main.m in Sources */,
+				CCFF1C15223A57EA001729A1 /* ViewControllerY.m in Sources */,
+				CCFF1C10223A341C001729A1 /* YLPopupView.m in Sources */,
+				CCFF1C1C223BA028001729A1 /* CustomView.m in Sources */,
 				CCDC67A3223148F40013F22D /* ViewControllerB.m in Sources */,
 				CCFF1BFD22365E48001729A1 /* ViewControllerC.m in Sources */,
 			);

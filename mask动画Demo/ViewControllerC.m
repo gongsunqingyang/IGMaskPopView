@@ -27,7 +27,7 @@
     IGMaskPopView *popView = [IGMaskPopView new];
     popView.contentView = self.view;
     [popView configWithDirection:direction
-               animationDuration:0.2
+               animationDuration:1
                    containerRect:rect];
     [popView show];
 }

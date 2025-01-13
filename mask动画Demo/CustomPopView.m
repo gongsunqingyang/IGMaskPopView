@@ -15,9 +15,15 @@
 
 @implementation CustomPopView
 
-- (void)setupUI {
-    [super setupUI];
-    
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupUI];
+    }
+    return self;
+}
+
+- (void)setupUI {    
     [self addSubview:self.containerView];
     [self.containerView addSubview:self.closeBtn];
 }

@@ -25,11 +25,13 @@
 
 @implementation IGMaskPopView
 
-- (void)setupUI {
-    [super setupUI];
-    
-    self.popDelegate = self;
-    [self addSubview:self.containerView];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addSubview:self.containerView];
+        self.popDelegate = self;
+    }
+    return self;
 }
 
 - (void)configWithDirection:(IGMaskPopViewDirection)direction
@@ -120,6 +122,11 @@
                          }];
         return NO;
     }
+}
+
+- (void)popViewDidDismiss:(IGPopView *)popView {
+    _animating = NO;
+    _animationComplete = NO;
 }
 
 #pragma mark - Getter
